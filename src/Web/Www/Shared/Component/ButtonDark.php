@@ -6,11 +6,11 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use RuntimeException;
 
-class Button extends Component {
+class ButtonDark extends Component {
     public string $classes = 'rounded transition-all hover:scale-105 duration-50 items-center shadow hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2';
 
     public function __construct(
-        public readonly string $color = 'gray',
+        public readonly string $color = 'indigo',
         public readonly string $size = 'default',
         public readonly string|null $icon = null
     ) {
@@ -20,7 +20,7 @@ class Button extends Component {
             default => throw new RuntimeException('Unknown size: ' . $this->size),
         };
         $this->classes .= match ($this->color) {
-            'gray' => ' text-gray-600 hover:text-gray-700 bg-gray-200 hover:bg-gray-300 shadow-gray-500/20 hover:shadow-gray-500/20 focus:ring-gray-300',
+            'indigo' => ' text-indigo-50 hover:text-indigo-100 bg-indigo-600 hover:bg-indigo-700 shadow-indigo-600/20 hover:shadow-indigo-600/20 focus:ring-indigo-700',
             default => throw new RuntimeException('Unknown color: ' . $this->color),
         };
     }

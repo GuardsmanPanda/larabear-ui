@@ -13,7 +13,7 @@ class BearUiServiceProvider extends ServiceProvider {
             //$this->publishes(paths: [__DIR__ . '/../../../../config/config.php' => $this->app->configPath(path: 'bear-ui.php'),], groups: 'bear-ui');
             return;
         }
-        Blade::componentNamespace('LarabearUi\\Web\\Www\\Share\\Component', 'bear');
+        Blade::componentNamespace('GuardsmanPanda\\LarabearUi\\Web\\Www\\Shared\\Component', 'bear');
         $this->loadViewsFrom(path: base_path(path: '/vendor/guardsmanpanda/larabear-ui/src/Web/Www/Shared/View'), namespace: 'bear');
     }
 }
