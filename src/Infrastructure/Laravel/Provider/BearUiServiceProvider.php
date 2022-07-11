@@ -2,6 +2,7 @@
 
 namespace GuardsmanPanda\LarabearUi\Infrastructure\Laravel\Provider;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class BearUiServiceProvider extends ServiceProvider {
@@ -10,7 +11,9 @@ class BearUiServiceProvider extends ServiceProvider {
             $this->commands(commands: [
             ]);
             //$this->publishes(paths: [__DIR__ . '/../../../../config/config.php' => $this->app->configPath(path: 'bear-ui.php'),], groups: 'bear-ui');
-            $this->loadViewsFrom(path: base_path(path: '/../../../Web/Www/Shared/View'), namespace: '');
+            return;
         }
+        Blade::componentNamespace('LarabearUi\\Web\\Www\\Share\\Component', 'bear');
+        $this->loadViewsFrom(path: base_path(path: '/vendor/guardsmanpanda/larabear-ui/src/Web/Www/Shared/View'), namespace: 'bear');
     }
 }

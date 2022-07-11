@@ -7,7 +7,7 @@
     <form method="dialog">
         <x-button-lg color="gray">{!!$cancel_text!!}</x-button-lg>
     </form>
-    <x-button-lg-dark form="dialog-form">{!!$submit_text!!}</x-button-lg-dark>
+    <x-bear::button.indigo-dark form="dialog-form" type="submit">{!!$submit_text!!}</x-bear::button.indigo-dark>
     </button>
 </div>
 <div id="dialog-title" hx-swap-oob="true">{!!$title!!}</div>
