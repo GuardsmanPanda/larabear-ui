@@ -16,7 +16,8 @@ class ButtonDark extends Component {
     ) {
         $this->classes .= match ($this->size) {
             'default' => ' px-5 py-2 font-medium',
-            'small' => ' text-sm px-3 py-0.5 font-bold',
+            'small' => ' text-sm px-4 py-1.5 font-medium',
+            'tiny' => ' text-sm px-3 py-1 font-bold',
             default => throw new RuntimeException('Unknown size: ' . $this->size),
         };
         $this->classes .= match ($this->color) {

@@ -5,7 +5,7 @@
 </form>
 <div class="border-t flex gap-2 py-3  px-4 flex-row-reverse">
     <form method="dialog">
-        <x-button-lg color="gray">{!!$cancel_text!!}</x-button-lg>
+        <x-bear::button>{!!$cancel_text!!}</x-bear::button>
     </form>
     <x-bear::buttonDark form="dialog-form" type="submit">{!!$submit_text!!}</x-bear::buttonDark>
 </div>
