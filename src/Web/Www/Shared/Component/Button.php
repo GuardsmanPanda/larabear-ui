@@ -7,7 +7,7 @@ use Illuminate\View\Component;
 use RuntimeException;
 
 class Button extends Component {
-    public string $classes = 'rounded transition-all hover:scale-105 duration-50 items-center shadow hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2';
+    public string $classes = 'inline-flex rounded transition-all hover:scale-105 duration-50 items-center shadow hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2';
 
     public function __construct(
         public readonly string $color = 'gray',
@@ -16,7 +16,7 @@ class Button extends Component {
     ) {
         $this->classes .= match ($this->size) {
             'default' => ' px-5 py-2 font-medium',
-            'small' => ' text-sm px-4 py-1.5 font-medium',
+            'small' => ' px-4 py-1.5 font-medium',
             'tiny' => ' text-sm px-3 py-1 font-bold',
             default => throw new RuntimeException('Unknown size: ' . $this->size),
         };
