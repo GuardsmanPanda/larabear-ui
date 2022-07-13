@@ -626,17 +626,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GuardsmanPanda/larabear.git",
-                "reference": "7e6a93523fc486d7b124ae0d41a4acbf5c6be680"
+                "reference": "fc34028454ebfcdd763653f24eb529b1b2a67277"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GuardsmanPanda/larabear/zipball/7e6a93523fc486d7b124ae0d41a4acbf5c6be680",
-                "reference": "7e6a93523fc486d7b124ae0d41a4acbf5c6be680",
+                "url": "https://api.github.com/repos/GuardsmanPanda/larabear/zipball/fc34028454ebfcdd763653f24eb529b1b2a67277",
+                "reference": "fc34028454ebfcdd763653f24eb529b1b2a67277",
                 "shasum": ""
             },
             "require": {
                 "erusev/parsedown": "^1.7",
-                "ext-pdo": "*",
                 "laravel/framework": "^v8.83.12 || ^9.18",
                 "php": "^8.1"
             },
@@ -668,7 +667,7 @@
                 "issues": "https://github.com/GuardsmanPanda/larabear/issues",
                 "source": "https://github.com/GuardsmanPanda/larabear/tree/main"
             },
-            "time": "2022-07-11T05:49:35+00:00"
+            "time": "2022-07-12T07:07:50+00:00"
         },
         {
             "name": "laravel/framework",
