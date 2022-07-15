@@ -19,8 +19,8 @@ class BearUiServiceProvider extends ServiceProvider {
         $this->loadViewsFrom(path: base_path(path: '/vendor/guardsmanpanda/larabear-ui/src/Web/Www/Shared/View'), namespace: 'bear');
         $this->loadViewsFrom(path: base_path(path: '/vendor/guardsmanpanda/larabear-ui/src/Web/Www/Dashboard/View'), namespace: 'bear-dashboard');
         if (! ($this->app instanceof CachesRoutes && $this->app->routesAreCached())) {
-            Route::prefix(prefix: 'bear')->group(function () {
-                Route::prefix(prefix: 'dashboard')->group(base_path(path: '/vendor/guardsmanpanda/larabear-ui/src/Web/Www/Dashboard/routes.php'));
+            Route::prefix('bear')->group(function () {
+                Route::prefix('dashboard')->group(base_path(path: '/vendor/guardsmanpanda/larabear-ui/src/Web/Www/Dashboard/routes.php'));
             });
         }
     }
